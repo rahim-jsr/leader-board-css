@@ -17,6 +17,7 @@ body {
   margin: 0 auto;
   margin-top: 36px;
   padding: 30px;
+  border-radius: 5px;
 }
 
 .section-title {
@@ -59,7 +60,8 @@ hr {
   width: 227px;
   height: 127px;
 }
-.blog-title {
+.blog-title,
+.course-title {
   font-size: 1.25rem;
   font-weight: 500px;
   margin-bottom: 0.375rem;
@@ -69,4 +71,46 @@ hr {
 }
 .author-info > span {
   color: #562eff;
+}
+
+/* latest course section styles  */
+.latest-course {
+  /* margin-top: 20px; */
+}
+.courses {
+  display: flex;
+  justify-content: space-evenly;
+}
+.course {
+  padding: 15px;
+  box-shadow: 0px 5.342289924621582px 13.35572338104248px 0px #0000000d;
+}
+.course img {
+  width: 224px;
+  height: 104px;
+}
+.trainer-name {
+  color: #ed6b4f;
+  margin-bottom: 1.1rem;
+}
+.fa-star {
+  font-size: 0.75rem;
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-details {
+  display: flex;
+  justify-content: space-between;
+}
+.rating span {
+  color: #aeaeae;
+}
+.course-deration {
+  padding: 5px;
+  font-size: 0.75rem;
+  background: #ffe4e8;
+  border-radius: 10px;
+  color: #ed6b4f;
 }
