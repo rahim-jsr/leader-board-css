@@ -26,6 +26,45 @@ body {
   margin-bottom: 33px;
 }
 
+/*-------------------
+   navbar styles 
+------------------- */
+nav {
+  background: #562eff;
+}
+.nav-container {
+  padding: 30px;
+  /* height: 95px; */
+  width: 100%;
+  max-width: 870px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  column-gap: 15px;
+}
+.logo img {
+  width: 40px;
+  height: 50px;
+}
+.menus {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.menus li {
+  list-style: none;
+}
+.menus a {
+  text-decoration: none;
+  color: white;
+}
+
 /*-------------------------
    top players section styles
  --------------------------*/
@@ -116,6 +155,12 @@ hr {
 
 /* media quires styles */
 @media only screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 0;
+    row-gap: 30px;
+  }
   .container {
     padding: 0;
   }
